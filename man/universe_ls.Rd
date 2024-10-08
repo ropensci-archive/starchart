@@ -24,6 +24,7 @@ universe_ls("ropensci")
 \seealso{
 Other universe: 
 \code{\link{universe_package}()},
-\code{\link{universe_packages}()}
+\code{\link{universe_packages}()},
+\code{\link{universe_search}()}
 }
 \concept{universe}

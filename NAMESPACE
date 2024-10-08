@@ -3,3 +3,4 @@
 export(universe_ls)
 export(universe_package)
 export(universe_packages)
+export(universe_search)

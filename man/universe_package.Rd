@@ -25,6 +25,7 @@ universe_package("jeroen", package = "curl")
 \seealso{
 Other universe: 
 \code{\link{universe_ls}()},
-\code{\link{universe_packages}()}
+\code{\link{universe_packages}()},
+\code{\link{universe_search}()}
 }
 \concept{universe}
