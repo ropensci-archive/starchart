@@ -30,12 +30,35 @@ You can install the development version of starchart from [GitHub](https://githu
 pak::pak("ropenscilabs/starchart")
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+### All packages in an universe
 
 ```{r example}
 library(starchart)
 universe_ls("jeroen")
+```
+
+### Info on all packages in an universe
+
+```{r}
 universe_packages("jeroen", limit = 1)
+```
+
+### Info on a single package in an universe
+
+```{r}
+universe_package("jeroen", package = "curl")
+```
+
+### Search within a single universe
+
+```{r}
+universe_search("ropensci", query = 'needs:httr2', limit = 1)
+```
+
+### Search among all universes
+
+```{r}
+global_search(query = '"weather data"', limit = 1)
 ```

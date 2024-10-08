@@ -1,6 +1,6 @@
 #' All packages in an universe
 #'
-#' @param universe Name of the universe (character of length 1)
+#' @inheritParams universe_search
 #'
 #' @return A character vector of all packages in the universe.
 #' @export
@@ -25,8 +25,7 @@ universe_ls <- function(universe) {
 
 #' Info on all packages in an universe
 #'
-#' @param universe Name of the universe (character of length 1)
-#' @param limit Number of results to return (integer of length 1)
+#' @inheritParams universe_search
 #'
 #' @return A list with information on all packages in the universe.
 #' @export
@@ -51,7 +50,7 @@ universe_packages <- function(universe, limit = 100) {
 
 #' Info on a single packages in an universe
 #'
-#' @param universe Name of the universe (character of length 1)
+#' @inheritParams universe_search
 #' @param package Name of the package (character of length 1)
 #'
 #' @return A list with information on the package.
