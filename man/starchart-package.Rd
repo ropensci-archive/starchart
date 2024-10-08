@@ -8,6 +8,14 @@
 \description{
 Client to access the 'R-Universe' 'API'.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ropenscilabs/starchart}
+  \item Report bugs at \url{https://github.com/ropenscilabs/starchart/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Maëlle Salmon \email{msmaellesalmon@gmail.com} (\href{https://orcid.org/0000-0002-2815-0399}{ORCID})
 

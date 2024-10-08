@@ -1,3 +1,4 @@
 ^starchart\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^man/universe_query\.Rd$
