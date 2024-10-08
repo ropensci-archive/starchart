@@ -43,23 +43,27 @@ universe_ls("jeroen")
 ### Info on all packages in an universe
 
 ```{r}
-universe_packages("jeroen", limit = 1)
+universe_packages("jeroen", limit = 1) |>
+  str(max.level = 2)
 ```
 
 ### Info on a single package in an universe
 
 ```{r}
-universe_package("jeroen", package = "curl")
+universe_package("jeroen", package = "curl") |>
+  str(max.level = 2)
 ```
 
 ### Search within a single universe
 
 ```{r}
-universe_search("ropensci", query = 'needs:httr2', limit = 1)
+universe_search("ropensci", query = 'needs:httr2', limit = 1) |>
+  str(max.level = 2)
 ```
 
 ### Search among all universes
 
 ```{r}
-global_search(query = '"weather data"', limit = 1)
+global_search(query = '"weather data"', limit = 1) |>
+  str(max.level = 2)
 ```
