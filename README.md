@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/ropenscilabs/starchart/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropenscilabs/starchart/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/ropenscilabs/starchart/graph/badge.svg)](https://app.codecov.io/gh/ropenscilabs/starchart)
 <!-- badges: end -->
 
 The goal of starchart is to access the R-universe API.
@@ -3438,7 +3440,7 @@ universe_search("ropensci", query = 'needs:httr2', limit = 1)
 #> [1] 1
 #> 
 #> $total
-#> [1] 31
+#> [1] 32
 ```
 
 ### Search among all universes
