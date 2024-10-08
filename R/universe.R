@@ -32,7 +32,7 @@ universe_ls <- function(universe) {
 #' universe_packages("jeroen")
 #' universe_packages("ropensci")
 #' @family universe
-universe_packages <- function(universe, limit = 100) {
+universe_packages <- function(universe, limit = 100L) {
   assert_character(universe, "universe")
   # TODO assert that universe is an universe
 
@@ -66,14 +66,15 @@ universe_package <- function(universe, package) {
 
   universe_query(
     universe_url = sprintf("https://%s.r-universe.dev", universe),
-    path = sprintf("packages/%s", package),
-  )
+    path = sprintf("packages/%s", package), # nolint: nonportable_path_linter
+  ) # nolint: missing_argument_linter
 }
 
 #' Search within a single universe
 #'
 #' @param universe Name of the universe (character of length 1)
-#' @param query Query string. See [R-universe docs](https://docs.r-universe.dev/browse/search.html).
+#' @param query Query string.
+#' See [R-universe docs](https://docs.r-universe.dev/browse/search.html).
 #' @param limit Number of results to return (integer of length 1)
 #'
 #' @return A list with query results. The `total` field indicates the

@@ -1,7 +1,7 @@
 # assert_character() works
 
     Code
-      assert_character(1, "universe")
+      assert_character(1L, "universe")
     Condition
       Error:
       ! `name` must be a character of length 1.

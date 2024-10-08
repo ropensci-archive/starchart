@@ -3,15 +3,15 @@ test_that("universe_ls() works", {
     packages <- universe_ls("maelle")
   })
   expect_type(packages, "character")
-  expect_gt(length(packages), 0)
+  expect_gt(length(packages), 0L)
 })
 
 test_that("universe_packages() works", {
   httptest2::with_mock_dir("univ-packages", {
-    packages <- universe_packages("maelle", limit = 1)
+    packages <- universe_packages("maelle", limit = 1L)
   })
   expect_type(packages, "list")
-  expect_gt(length(packages), 0)
+  expect_gt(length(packages), 0L)
 })
 
 test_that("universe_package() works", {
@@ -19,7 +19,7 @@ test_that("universe_package() works", {
     packages <- universe_package("jeroen", package = "curl")
   })
   expect_type(packages, "list")
-  expect_gt(length(packages), 0)
+  expect_gt(length(packages), 0L)
 })
 
 test_that("universe_package() errors well", {
@@ -30,8 +30,8 @@ test_that("universe_package() errors well", {
 
 test_that("universe_search() works", {
   httptest2::with_mock_dir("univ-search", {
-    packages <- universe_search("ropensci", query = 'needs:gert', limit = 1)
+    packages <- universe_search("ropensci", query = "needs:gert", limit = 1L)
   })
   expect_type(packages, "list")
-  expect_gt(length(packages), 0)
+  expect_gt(length(packages), 0L)
 })

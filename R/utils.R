@@ -22,7 +22,7 @@ universe_query <- function(universe_url, path, query_params = NULL) {
 }
 
 assert_character <- function(x, name, call = rlang::caller_env()) {
-  if (!is.character(x) || length(x) != 1) {
+  if (!is.character(x) || length(x) != 1L) {
     cli::cli_abort("{.arg name} must be a character of length 1.", call = call)
   }
 }

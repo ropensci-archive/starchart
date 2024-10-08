@@ -11,6 +11,7 @@ Client to access the 'R-Universe' 'API'.
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://docs.ropensci.org/starchart/}
   \item \url{https://github.com/ropenscilabs/starchart}
   \item Report bugs at \url{https://github.com/ropenscilabs/starchart/issues}
 }

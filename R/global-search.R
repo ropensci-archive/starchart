@@ -9,7 +9,7 @@
 #' @examplesIf interactive()
 #' global_search(query = '"weather data"', limit = 1)
 #' global_search(query = 'needs:httr2', limit = 1)
-global_search <- function(query, limit = 100) {
+global_search <- function(query, limit = 100L) {
   assert_character(query, "query")
 
   httr2::request("https://r-universe.dev") |>
