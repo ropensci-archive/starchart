@@ -1,0 +1,12 @@
+url: https://docs.ropensci.org/starchart/
+
+reference:
+- title: Endpoint for global search across all universes
+  contents:
+  - global_search
+- title: Endpoints for single universes
+  contents:
+  - universe_ls
+  - universe_packages
+  - universe_package
+  - universe_search
