@@ -10,6 +10,8 @@
 #' global_search(query = '"weather data"', limit = 1)
 #' global_search(query = 'needs:httr2', limit = 1)
 global_search <- function(query, limit = 100) {
+  assert_character(query, "query")
+
   httr2::request("https://r-universe.dev") |>
     httr2::req_url_path("api") |>
     httr2::req_url_path_append("search") |>

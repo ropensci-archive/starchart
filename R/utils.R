@@ -20,3 +20,9 @@ universe_query <- function(universe_url, path, query_params = NULL) {
   httr2::req_perform(request) |>
     httr2::resp_body_json()
 }
+
+assert_character <- function(x, name, call = rlang::caller_env()) {
+  if (!is.character(x) || length(x) != 1) {
+    cli::cli_abort("{.arg name} must be a character of length 1.", call = call)
+  }
+}

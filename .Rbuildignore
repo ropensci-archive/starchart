@@ -3,7 +3,7 @@
 ^LICENSE\.md$
 ^\.github$
 ^README\.Rmd$
-^man/universe_query\.Rd$
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^man/universe_query\.Rd$

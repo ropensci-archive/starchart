@@ -10,9 +10,7 @@
 #' universe_ls("ropensci")
 #' @family universe
 universe_ls <- function(universe) {
-  if (!is.character(universe) || length(universe) != 1) {
-    cli::cli_abort("{.arg universe} must be a character of length 1.")
-  }
+  assert_character(universe, "universe")
   # TODO assert that universe is an universe
 
   universe_query(
@@ -35,9 +33,7 @@ universe_ls <- function(universe) {
 #' universe_packages("ropensci")
 #' @family universe
 universe_packages <- function(universe, limit = 100) {
-  if (!is.character(universe) || length(universe) != 1) {
-    cli::cli_abort("{.arg universe} must be a character of length 1.")
-  }
+  assert_character(universe, "universe")
   # TODO assert that universe is an universe
 
   universe_query(
@@ -60,9 +56,8 @@ universe_packages <- function(universe, limit = 100) {
 #' universe_package("jeroen", package = "curl")
 #' @family universe
 universe_package <- function(universe, package) {
-  if (!is.character(universe) || length(universe) != 1) {
-    cli::cli_abort("{.arg universe} must be a character of length 1.")
-  }
+  assert_character(universe, "universe")
+  assert_character(package, "package")
   # TODO assert that universe is an universe
 
   if (!package %in% universe_ls(universe)) {
@@ -90,12 +85,8 @@ universe_package <- function(universe, package) {
 #' universe_search("ropensci", query = 'needs:httr2')
 #' @family universe
 universe_search <- function(universe, query, limit) {
-  if (!is.character(universe) || length(universe) != 1) {
-    cli::cli_abort("{.arg universe} must be a character of length 1.")
-  }
-  if (!is.character(query) || length(query) != 1) {
-    cli::cli_abort("{.arg query} must be a character of length 1.")
-  }
+  assert_character(universe, "universe")
+  assert_character(query, "query")
   # TODO assert that universe is an universe
 
   universe_query(

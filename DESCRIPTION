@@ -13,7 +13,8 @@ Depends:
     R (>= 4.2.0)
 Imports: 
     cli,
-    httr2
+    httr2,
+    rlang
 URL: https://docs.ropensci.org/starchart/, https://github.com/ropenscilabs/starchart
 BugReports: https://github.com/ropenscilabs/starchart/issues
 Config/Needs/build: moodymudskipper/devtag
