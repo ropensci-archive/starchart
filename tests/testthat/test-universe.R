@@ -13,3 +13,17 @@ test_that("universe_packages() works", {
   expect_type(packages, "list")
   expect_gt(length(packages), 0)
 })
+
+test_that("universe_package() works", {
+  httptest2::with_mock_dir("univ-package", {
+    packages <- universe_package("jeroen", package = "curl")
+  })
+  expect_type(packages, "list")
+  expect_gt(length(packages), 0)
+})
+
+test_that("universe_package() errors well", {
+  expect_snapshot(error = TRUE, {
+    universe_package("jeroen", package = "shiny")
+  })
+})

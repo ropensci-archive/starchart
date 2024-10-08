@@ -1,6 +1,6 @@
 ^starchart\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
-^man/universe_query\.Rd$
 ^\.github$
 ^README\.Rmd$
+^man/universe_query\.Rd$

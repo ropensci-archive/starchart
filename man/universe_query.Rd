@@ -4,7 +4,7 @@
 \alias{universe_query}
 \title{Query the API of a single universe}
 \usage{
-universe_query(universe_url, path, query_params)
+universe_query(universe_url, path, query_params = NULL)
 }
 \arguments{
 \item{universe_url}{URL to the universe like ""https://jeroen.r-universe.dev"}
