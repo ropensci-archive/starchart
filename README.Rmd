@@ -51,7 +51,7 @@ universe_packages("jeroen", limit = 1) |>
 
 ```{r}
 universe_package("jeroen", package = "curl") |>
-  str(max.level = 2)
+  str(max.level = 1)
 ```
 
 ### Search within a single universe

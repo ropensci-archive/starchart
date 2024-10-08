@@ -62,21 +62,21 @@ universe_packages("jeroen", limit = 1) |>
 #>   ..$ Repository        : chr "https://jeroen.r-universe.dev"
 #>   ..$ RemoteUrl         : chr "https://github.com/jeroen/v8"
 #>   ..$ RemoteRef         : chr "HEAD"
-#>   ..$ RemoteSha         : chr "b876d460c1935ee37d6303ef33809dc544ac0c2d"
+#>   ..$ RemoteSha         : chr "7b0a4b79298f154f4d132fb335969525052b6b62"
 #>   ..$ Packaged          :List of 2
 #>   ..$ Author            : chr "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\nJan Marvin Garbuszus [ctb]"
 #>   ..$ Maintainer        : chr "Jeroen Ooms <jeroenooms@gmail.com>"
-#>   ..$ MD5sum            : chr "9097c90567337bc118144a72bef2ae73"
+#>   ..$ MD5sum            : chr "26024b81c7fb2e63c4aedc4c17d48b89"
 #>   ..$ _user             : chr "jeroen"
 #>   ..$ _type             : chr "src"
 #>   ..$ _file             : chr "V8_5.9000.tar.gz"
-#>   ..$ _fileid           : chr "9097c90567337bc118144a72bef2ae73"
-#>   ..$ _filesize         : int 193614
-#>   ..$ _sha256           : chr "c94b60fb1fa5bc5810243245a00c6b002eb3be394f31d8942cccf0628c675749"
-#>   ..$ _created          : chr "2024-10-08T10:18:09.000Z"
-#>   ..$ _published        : chr "2024-10-08T10:23:37.885Z"
+#>   ..$ _fileid           : chr "26024b81c7fb2e63c4aedc4c17d48b89"
+#>   ..$ _filesize         : int 193737
+#>   ..$ _sha256           : chr "06ec5133be8dfe6f9c605e4e4b1bf2fc46fde4010a5fe4548afed2ae85aa508b"
+#>   ..$ _created          : chr "2024-10-08T11:14:55.000Z"
+#>   ..$ _published        : chr "2024-10-08T11:20:35.459Z"
 #>   ..$ _status           : chr "success"
-#>   ..$ _buildurl         : chr "https://github.com/r-universe/jeroen/actions/runs/11233336918"
+#>   ..$ _buildurl         : chr "https://github.com/r-universe/jeroen/actions/runs/11234209686"
 #>   ..$ _windevel         : chr "success"
 #>   ..$ _linuxdevel       : chr "success"
 #>   ..$ _wasmbinary       : chr "none"
@@ -125,7 +125,7 @@ universe_packages("jeroen", limit = 1) |>
 
 ``` r
 universe_package("jeroen", package = "curl") |>
-  str(max.level = 2)
+  str(max.level = 1)
 #> List of 74
 #>  $ Package           : chr "curl"
 #>  $ Type              : chr "Package"
@@ -148,8 +148,6 @@ universe_package("jeroen", package = "curl") |>
 #>  $ RemoteSha         : chr "20d3bbe5eef7c4d7eb843598d7b59e3e56332859"
 #>  $ NeedsCompilation  : chr "yes"
 #>  $ Packaged          :List of 2
-#>   ..$ Date: chr "2024-09-19 16:33:20 UTC"
-#>   ..$ User: chr "root"
 #>  $ Author            : chr "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\nHadley Wickham [ctb],\nRStudio [cph]"
 #>  $ Maintainer        : chr "Jeroen Ooms <jeroenooms@gmail.com>"
 #>  $ MD5sum            : chr "d7023057e782cd88025f3828ffaf1503"
@@ -162,18 +160,7 @@ universe_package("jeroen", package = "curl") |>
 #>  $ _published        : chr "2024-09-19T16:39:47.385Z"
 #>  $ _upstream         : chr "https://github.com/jeroen/curl"
 #>  $ _commit           :List of 5
-#>   ..$ id       : chr "20d3bbe5eef7c4d7eb843598d7b59e3e56332859"
-#>   ..$ author   : chr "Jeroen Ooms <jeroenooms@gmail.com>"
-#>   ..$ committer: chr "Jeroen Ooms <jeroenooms@gmail.com>"
-#>   ..$ message  : chr "Update NEWS\n"
-#>   ..$ time     : int 1726760601
 #>  $ _maintainer       :List of 6
-#>   ..$ name    : chr "Jeroen Ooms"
-#>   ..$ email   : chr "jeroenooms@gmail.com"
-#>   ..$ login   : chr "jeroen"
-#>   ..$ mastodon: chr "https://fosstodon.org/@jeroenooms"
-#>   ..$ uuid    : int 216319
-#>   ..$ orcid   : chr "0000-0002-4035-0289"
 #>  $ _distro           : chr "noble"
 #>  $ _host             : chr "GitHub-Actions"
 #>  $ _status           : chr "success"
@@ -186,214 +173,34 @@ universe_package("jeroen", package = "curl") |>
 #>  $ _buildurl         : chr "https://github.com/r-universe/jeroen/actions/runs/10945093197"
 #>  $ _registered       : logi TRUE
 #>  $ _dependencies     :List of 9
-#>   ..$ :List of 3
-#>   ..$ :List of 2
-#>   ..$ :List of 3
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 3
-#>   ..$ :List of 2
 #>  $ _owner            : chr "jeroen"
 #>  $ _selfowned        : logi TRUE
 #>  $ _usedby           : int 5530
 #>  $ _updates          :List of 15
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
 #>  $ _tags             :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
 #>  $ _stars            : int 216
 #>  $ _contributions    :List of 20
-#>   ..$ jeroen         : int 1073
-#>   ..$ hadley         : int 32
-#>   ..$ gaborcsardi    : int 3
-#>   ..$ jennybc        : int 2
-#>   ..$ tlevine        : int 2
-#>   ..$ craigcitro     : int 1
-#>   ..$ jasperla       : int 1
-#>   ..$ jcheng5        : int 1
-#>   ..$ jbrzusto       : int 1
-#>   ..$ fazendaaa      : int 1
-#>   ..$ the-mad-statter: int 1
-#>   ..$ mfansler       : int 1
-#>   ..$ mvkorpel       : int 1
-#>   ..$ pschmied       : int 1
-#>   ..$ rls-p4         : int 1
-#>   ..$ tanho63        : int 1
-#>   ..$ theprez        : int 1
-#>   ..$ wibeasley      : int 1
-#>   ..$ ahjota         : int 1
-#>   ..$ he32           : int 1
 #>  $ _userbio          :List of 4
-#>   ..$ uuid       : int 216319
-#>   ..$ type       : chr "user"
-#>   ..$ name       : chr "Jeroen Ooms"
-#>   ..$ description: chr "Staff research engineer for @ropensci"
 #>  $ _downloads        :List of 2
-#>   ..$ count : int 1099777
-#>   ..$ source: chr "https://cranlogs.r-pkg.org/downloads/total/last-month/curl"
 #>  $ _mentions         : int 21
 #>  $ _devurl           : chr "https://github.com/jeroen/curl"
 #>  $ _searchresults    : int 3328
 #>  $ _assets           :List of 11
-#>   ..$ : chr "extra/citation.cff"
-#>   ..$ : chr "extra/citation.html"
-#>   ..$ : chr "extra/citation.json"
-#>   ..$ : chr "extra/citation.txt"
-#>   ..$ : chr "extra/contents.json"
-#>   ..$ : chr "extra/curl.html"
-#>   ..$ : chr "extra/NEWS.html"
-#>   ..$ : chr "extra/NEWS.txt"
-#>   ..$ : chr "extra/readme.html"
-#>   ..$ : chr "extra/readme.md"
-#>   ..$ : chr "manual.pdf"
 #>  $ _homeurl          : chr "https://github.com/jeroen/curl"
 #>  $ _realowner        : chr "jeroen"
 #>  $ _cranurl          : logi TRUE
 #>  $ _releases         :List of 45
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
-#>   ..$ :List of 2
 #>  $ _exports          :List of 41
-#>   ..$ : chr "curl"
-#>   ..$ : chr "curl_download"
-#>   ..$ : chr "curl_echo"
-#>   ..$ : chr "curl_escape"
-#>   ..$ : chr "curl_fetch_disk"
-#>   ..$ : chr "curl_fetch_echo"
-#>   ..$ : chr "curl_fetch_memory"
-#>   ..$ : chr "curl_fetch_multi"
-#>   ..$ : chr "curl_fetch_stream"
-#>   ..$ : chr "curl_options"
-#>   ..$ : chr "curl_symbols"
-#>   ..$ : chr "curl_unescape"
-#>   ..$ : chr "curl_upload"
-#>   ..$ : chr "curl_version"
-#>   ..$ : chr "file_writer"
-#>   ..$ : chr "find_port"
-#>   ..$ : chr "form_data"
-#>   ..$ : chr "form_file"
-#>   ..$ : chr "handle_cookies"
-#>   ..$ : chr "handle_data"
-#>   ..$ : chr "handle_reset"
-#>   ..$ : chr "handle_setform"
-#>   ..$ : chr "handle_setheaders"
-#>   ..$ : chr "handle_setopt"
-#>   ..$ : chr "has_internet"
-#>   ..$ : chr "ie_get_proxy_for_url"
-#>   ..$ : chr "ie_proxy_info"
-#>   ..$ : chr "multi_add"
-#>   ..$ : chr "multi_cancel"
-#>   ..$ : chr "multi_download"
-#>   ..$ : chr "multi_fdset"
-#>   ..$ : chr "multi_list"
-#>   ..$ : chr "multi_run"
-#>   ..$ : chr "multi_set"
-#>   ..$ : chr "new_handle"
-#>   ..$ : chr "new_pool"
-#>   ..$ : chr "nslookup"
-#>   ..$ : chr "parse_date"
-#>   ..$ : chr "parse_headers"
-#>   ..$ : chr "parse_headers_list"
-#>   ..$ : chr "send_mail"
 #>  $ _help             :List of 18
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
-#>   ..$ :List of 3
 #>  $ _readme           : chr "https://github.com/jeroen/curl/raw/HEAD/README.md"
 #>  $ _rundeps          : list()
 #>  $ _sysdeps          :List of 1
-#>   ..$ :List of 7
 #>  $ _vignettes        :List of 2
-#>   ..$ :List of 8
-#>   ..$ :List of 8
 #>  $ _score            : num 19.6
 #>  $ _indexed          : logi TRUE
 #>  $ _nocasepkg        : chr "curl"
 #>  $ _universes        :List of 1
-#>   ..$ : chr "jeroen"
 #>  $ _binaries         :List of 9
-#>   ..$ :List of 11
-#>   ..$ :List of 10
-#>   ..$ :List of 10
-#>   ..$ :List of 10
-#>   ..$ :List of 10
-#>   ..$ :List of 10
-#>   ..$ :List of 10
-#>   ..$ :List of 10
-#>   ..$ :List of 10
 ```
 
 ### Search within a single universe
